@@ -1,1 +1,2 @@
-export { useExample } from "../redux/ducks/example"
+export { useCats } from "../redux/ducks/categories"
+export { usePosts } from "../redux/ducks/posts"

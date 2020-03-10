@@ -1,7 +1,7 @@
 const mysql = require("mysql")
 const config = require("config")
 
-const pool = mysql.createPool({
+const db = mysql.createPool({
   connectionLimit: 10,
   host: config.get("db.host"),
   user: config.get("db.user"),
@@ -9,4 +9,4 @@ const pool = mysql.createPool({
   database: config.get("db.database")
 })
 
-module.exports = pool
+module.exports = db

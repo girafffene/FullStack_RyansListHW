@@ -1,0 +1,76 @@
+.container {
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr, 4fr;
+}
+
+header {
+  background-color: #f4f4f4;
+}
+
+.parentContainer {
+  width: 350px;
+  height: auto;
+  margin: 0px 5px;
+  vertical-align: baseline;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.catTitle {
+  background-color: rgb(238, 238, 238);
+  width: 350px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+}
+
+.sub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.subCatName {
+  border-bottom: 1px solid #f4f4f4;
+}
+
+.sidebar {
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  left: 10px;
+  background-color: #f4f4f4;
+  overflow-x: hidden;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  line-height: 30%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  width: 260px;
+  height: 30px;
+}
+
+::placeholder {
+  font-size: 18px;
+  padding: 3px;
+}

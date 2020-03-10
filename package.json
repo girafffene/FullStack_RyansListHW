@@ -16,7 +16,8 @@
   "homepage": "https://github.com/PC-Fullstack-Spring-2020/boilerpolate#readme",
   "dependencies": {
     "concurrently": "^5.1.0",
-    "js-sha512": "^0.8.0"
+    "js-sha512": "^0.8.0",
+    "moment": "^2.24.0"
   },
   "boilerplate": {
     "name": "boilerplate",
