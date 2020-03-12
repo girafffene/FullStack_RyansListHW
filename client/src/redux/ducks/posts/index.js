@@ -27,10 +27,10 @@ function getPost(id) {
   }
 }
 
-function createPost(slug, name, post, cb) {
+function createPost(slug, name, post, images) {
   return new Promise((resolve, reject) => {
     axios
-      .post("/api/post", { slug, name, post })
+      .post("/api/post", { slug, name, post, images })
       .then(resp => {
         resolve(resp.data.id)
       })
@@ -43,7 +43,8 @@ function createPost(slug, name, post, cb) {
 export function usePosts() {
   const dispatch = useDispatch()
 
-  const create = (slug, name, post) => createPost(slug, name, post)
+  const create = (slug, name, post, images) =>
+    createPost(slug, name, post, images)
 
   const get = id => dispatch(getPost(id))
 
